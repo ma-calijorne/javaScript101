@@ -20,7 +20,7 @@ alert(message);
 //As declarações podem ser feitas separando as variáveis por virgula.
 let usuario = 'admin', idade = 39, mensagem = 'Olá Mundo';
 
-// let usuario = "marco";
+//  let usuario = "marco";
 
 alert(usuario);
 

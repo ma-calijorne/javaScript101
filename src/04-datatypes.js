@@ -1,9 +1,12 @@
 /*
-Um valor em JavaScript é sempre de um determinado tipo. Por exemplo, uma string ou um número.
+Um valor em JavaScript é sempre de um determinado tipo. Por exemplo, uma string
+ ou um número.
 
-Existem oito tipos básicos de dados em JavaScript. Vamos abordando todas ao longo do curso.
+Existem oito tipos básicos de dados em JavaScript. Vamos abordando todas ao 
+longo do curso.
 
-Podemos colocar qualquer tipo em uma variável. Por exemplo, uma variável pode em um momento 
+Podemos colocar qualquer tipo em uma variável. Por exemplo, uma variável
+ pode em um momento 
 ser uma string e depois armazenar um número:
 */
 
@@ -35,19 +38,22 @@ alert(1 / 0);
 alert(Infinity);
 
 //NaN: representa um erro computacional. É resultado de uma operação matemática 
-//ncorreta ou indefinida.
+//não correta ou indefinida.
 alert("Not a Number" / 2);
 
 // O NaN é "pegajoso":  Qualquer operação que envolva NaN retorna NaN
 
-console.log(NaN + 1)
-console.log(10 * NaN)
+console.log(NaN + 1);
+console.log(10 * NaN);
 
 // BigInt
-//Variáveis inteiras ou numericas não conseguem representar números maiores que 2^53 -1, 
-//ou seja 9007199254740991, nesses casos, usamos variáveis ou constantes bigint
+//Variáveis inteiras ou numericas não conseguem representar números maiores
+// que 2^53 -1, 
+//ou seja 9007199254740991, nesses casos, usamos variáveis ou constantes 
+//bigint
 
-const cBigInt = 1234567890123456789012345678901234567890n
+const cBigInt = 1234567890123456789012345678901234567890n;
+let cBigInt2 = 10n;
 
 //O n no final indica que a constante cBigInt será do tipo BigInt
 

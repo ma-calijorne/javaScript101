@@ -1,20 +1,24 @@
 /*
 
-Todos conhecemos vários operadores como adição (+), subtração (-), multiplicação (*) e divisão (/), são os operadores aritiméticos básicos.
+Todos conhecemos vários operadores como adição (+), subtração (-), multiplicação (*) e divisão (/), 
+são os operadores aritiméticos básicos.
 
-Neste arquivo, começaremos com operadores simples e depois nos concentraremos nos aspectos específicos do JavaScript, não cobertos pela aritmética escolar.
+Neste arquivo, começaremos com operadores simples e depois nos concentraremos nos aspectos 
+específicos do JavaScript, não cobertos pela aritmética escolar.
 
 */
 
 /*
 Termos Importantes: Antes de tudo vamos alinhar algumas terminologias:
 
-Um operando: É onde os operadores são aplicados. Por exemplo, na multiplicação de 5 * 2 existem dois operandos: o operando da esquerda é 5 e o da direita é 2. Muitas
+Um operando: É onde os operadores são aplicados. Por exemplo, na multiplicação de 5 * 2 existem
+dois operandos: o operando da esquerda é 5 e o da direita é 2. Muitas
 vezes são chamados também de "argumentos".
 */
 
 
-//Um operador é unário (unary) se tiver um único operando. Por exemplo, a negação unária - inverte o sinal de um número:
+//Um operador é unário (unary) se tiver um único operando. Por exemplo, a negação unária - inverte o 
+//sinal de um número:
 
 let x = 1;
 x = -x;
@@ -27,8 +31,10 @@ alert( x );
 let x1 = 1, y = 3;
 alert( y - x1 );
 
-/*Formalmente, nos exemplos acima temos dois operadores diferentes que compartilham o mesmo símbolo: o operador de negação, 
-um operador unário que inverte o sinal, e o operador de subtração, um operador binário que subtrai um número do outro.
+/*Formalmente, nos exemplos acima temos dois operadores diferentes que compartilham o mesmo 
+símbolo: o operador de negação, 
+um operador unário que inverte o sinal, e o operador de subtração, um operador binário que 
+subtrai um número do outro.
 
 Operadores Matemáticos:
 
@@ -81,14 +87,19 @@ alert(6 / '3n');
 /*
 PRECEDÊNCIA DE EXECUÇÃO:
 
-Se uma expressão possui mais de um operador, a ordem de execução é definida pela precedência deles, ou seja, a ordem de prioridade padrão dos operadores.
-Desde a escola, todos sabemos que a multiplicação na expressão 1 + 2 * 2 deve ser calculada antes da adição. Essa é exatamente a coisa de precedência. 
+Se uma expressão possui mais de um operador, a ordem de execução é definida pela precedência deles,
+ ou seja, a ordem de prioridade padrão dos operadores.
+Desde a escola, todos sabemos que a multiplicação na expressão 1 + 2 * 2 deve ser calculada antes 
+da adição. Essa é exatamente a coisa de precedência. 
 Diz-se que a multiplicação tem precedência maior do que a adição.
-Os parênteses substituem qualquer precedência, portanto, se não estivermos satisfeitos com a ordem padrão, podemos usá-los para alterá-la. Por exemplo, escreva (1 + 2) * 2.
-Existem muitos operadores em JavaScript. Cada operador tem um número de precedência correspondente. Aquele com o maior número executa primeiro. 
+Os parênteses substituem qualquer precedência, portanto, se não estivermos satisfeitos com a 
+ordem padrão, podemos usá-los para alterá-la. Por exemplo, escreva (1 + 2) * 2.
+Existem muitos operadores em JavaScript. Cada operador tem um número de precedência correspondente. 
+Aquele com o maior número executa primeiro. 
 Se a precedência for a mesma, a ordem de execução é da esquerda para a direita.
 
-Aqui está uma parte da tabela de precedência (você não precisa se lembrar disso, mas observe que os operadores unários são mais altos que os binários correspondentes):
+Aqui está uma parte da tabela de precedência (você não precisa se lembrar disso, mas observe que os 
+    operadores unários são mais altos que os binários correspondentes):
 
 
 Precedence	    Name	            Sign
@@ -126,7 +137,8 @@ alert(c);
 
 
 /*Modificação local (Modify-in-place) e auto-incremento
-Muitas vezes precisamos aplicar um operador a uma variável e armazenar o novo resultado nessa mesma variável.
+Muitas vezes precisamos aplicar um operador a uma variável e armazenar o novo resultado nessa mesma 
+variável.
 */
 
 let index;
@@ -134,7 +146,8 @@ index = 0;
 index = index + 5;
 alert(`O Valor de index sem alteração da notação é ${index}`);
 
-//Exite uma notação especifica para isso que implica em colocar o operador utilizado à frente do operador =.
+//Exite uma notação especifica para isso que implica em colocar o operador utilizado à frente do 
+//operador =.
 
 index = 0;
 index += 5;
@@ -151,13 +164,16 @@ dCounter--;
 alert(`O Valor de dCounter é: ${dCounter}`);
 
 /*
-O operador vírgula , é um dos operadores mais raros e incomuns. Às vezes, é usado para escrever um código mais curto, então precisamos conhecê-lo para entender o que está acontecendo.
-O operador vírgula nos permite avaliar várias expressões, dividindo-as com uma vírgula ,. Cada um deles é avaliado, mas apenas o resultado do último é retornado.
+O operador vírgula , é um dos operadores mais raros e incomuns. Às vezes, é usado para escrever um 
+código mais curto, então precisamos conhecê-lo para entender o que está acontecendo.
+O operador vírgula nos permite avaliar várias expressões, dividindo-as com uma vírgula ,. 
+Cada um deles é avaliado, mas apenas o resultado do último é retornado.
 */
 
 let eval = (1 + 2, 3 + 4);
 alert(eval);
-/*Aqui, a primeira expressão 1 + 2 é avaliada e seu resultado é descartado. Em seguida, 3 + 4 é avaliado e retornado como resultado. 
+/*Aqui, a primeira expressão 1 + 2 é avaliada e seu resultado é descartado. Em seguida, 3 + 4 é 
+avaliado e retornado como resultado. 
 O operador , tem menor prioridade, até mesmo que o =.
 
 
