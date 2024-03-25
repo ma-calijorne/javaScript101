@@ -74,8 +74,8 @@ for (let i = 0; i < 3; i++) {
  /*
  Break e Break Labels 
  As vezes precisamos sair de um loop e sair para executar outro segmento de código.
-
- *!*outer:*/!* for (let i = 0; i < 3; i++) {
+*/
+  for (let i = 0; i < 3; i++) {
 
     for (let j = 0; j < 3; j++) {
 

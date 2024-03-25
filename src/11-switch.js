@@ -1,6 +1,7 @@
 /*
 
-A declaração Switch: Utilzado para substituir multiplos "if". Ele fornece uma maneira mais descritiva de comparar um valor com várias variantes.
+A declaração Switch: Utilzado para substituir multiplos "if".
+Ele fornece uma maneira mais descritiva de comparar um valor com várias variantes.
 
 switch(x) {
   case 'value1':  // if (x === 'value1')
@@ -26,10 +27,10 @@ let a = 2 + 2;
 
 switch (a) {
   case 3:
-    alert( 'Valor muito Pequebo' );
+    alert( 'Valor muito PequeNo' );
     break;
   case 4:
-    alert( 'Exatamento o Valor!' );
+    alert( 'ExatamentE o Valor!' );
     break;
   case 5:
     alert( 'Valor muito grande' );
@@ -40,7 +41,8 @@ switch (a) {
 /*
 
 Aqui, o switch começa a comparar a primeira variante que é 3. A correspondência falha. Então testa a próxima que é 4 e não falha.
-Então a execução começa do caso 4 até o intervalo mais próximo. Se não houver interrupção (break), a execução continua com o próximo caso sem nenhuma verificação.
+Então a execução começa do caso 4 até o intervalo mais próximo. Se não houver 
+interrupção (break), a execução continua com o próximo caso sem nenhuma verificação.
 
 Exemplo sem o break
 

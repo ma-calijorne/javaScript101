@@ -86,7 +86,7 @@ de uma condição.
 
 Por exemplo:
 */
-let acessoPermitido;
+let acessoPermitido = false;
 let idade = prompt('Qual é a sua idade?', '');
 
 if (idade > 18) {

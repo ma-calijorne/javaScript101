@@ -1,21 +1,24 @@
 /*
 Operadores lógicos
-Existem quatro operadores lógicos em JavaScript: || (OU), 
-&& (E), ! (NÃO), ?? (coalescência nula). Aqui cobrimos os 
-três primeiros.
-Embora sejam chamados de "lógicos", podem ser aplicados a 
-valores de qualquer tipo, não apenas booleanos. Seu resultado
+Existem quatro operadores lógicos em JavaScript: 
+|| (OU), 
+&& (E), ! (NÃO), ?? (coalescência nula). Aqui 
+cobrimos os três primeiros.
+Embora sejam chamados de "lógicos", podem ser 
+aplicados a valores de qualquer tipo, não 
+apenas booleanos. Seu resultado
 também pode ser de qualquer tipo.
 
 
 || (OU)
-O operador "OU" é representado por dois símbolos de linha 
-vertical:
+O operador "OU" é representado por dois símbolos 
+de linha vertical:
 result = a || b;
 
-Na programação clássica, o OR lógico destina-se a manipular
-apenas valores booleanos. Se algum de seus argumentos for 
-verdadeiro, ele retorna verdadeiro, caso contrário, retorna 
+Na programação clássica, o OR lógico destina-se a 
+manipular apenas valores booleanos. Se algum de 
+seus argumentos for verdadeiro, ele retorna 
+verdadeiro, caso contrário, retorna 
 falso.
 Em JavaScript, o operador é um pouco mais complicado e 
 poderoso. Mas primeiro, vamos ver o que acontece com 
@@ -213,7 +216,8 @@ alert( !!null ); // false
 /*Ou seja, o primeiro NOT converte o valor para booleano 
 e retorna o inverso, e o segundo NOT o inverte novamente.
 No final, temos uma conversão simples de valor para booleano.
-Há uma maneira um pouco mais detalhada de fazer a mesma coisa - uma função booleana integrada:
+Há uma maneira um pouco mais detalhada de fazer a mesma coisa - uma função 
+booleana integrada:
 */
 
 alert( Boolean("String Não Vazia") ); // true
@@ -221,12 +225,12 @@ alert( Boolean(null) ); // false
 
 
 /*
-
+TAREFA
 Qual será a saída?
 
 alert( null || 2 || undefined );
 
-alert( alert(1) || 2 || alert(3) );
+alert( alert(1) && 2 && alert(3) );
 
 
 

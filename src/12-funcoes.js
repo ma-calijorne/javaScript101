@@ -3,10 +3,12 @@
 Funções
 Muitas vezes, precisamos executar uma ação semelhante em muitos lugares do script.
 
-Por exemplo, precisamos mostrar uma mensagem bonita quando um visitante faz login, logout e 
+Por exemplo, precisamos mostrar uma mensagem bonita quando um visitante faz login, 
+logout e 
 talvez em outro lugar.
 
-As funções são os principais "blocos de construção" do programa. Elas permitem que o código 
+As funções são os principais "blocos de construção" do programa. Elas permitem que o
+ código 
 seja chamado várias vezes sem repetição.
 
 Já vimos exemplos de funções integradas, como alert(message), prompt(message, default) e 
@@ -16,9 +18,6 @@ Declaração de Função
 Para criar uma função, podemos usar uma declaração de função.
 
 Por exemplo:
-
-
-
 */
 
 function mostrarMensagem() {
@@ -26,9 +25,11 @@ function mostrarMensagem() {
 }
 
 /*
-A palavra-chave function vem primeiro, depois o nome da função, depois uma lista de parâmetros entre 
+A palavra-chave function vem primeiro, depois o nome da função, depois uma lista de 
+parâmetros entre 
 parênteses (separados por vírgula, 
-vazio no exemplo acima, veremos exemplos mais tarde) e finalmente o código da função, também chamado 
+vazio no exemplo acima, veremos exemplos mais tarde) e finalmente o código da função, 
+também chamado 
 "o corpo funcional", entre chaves.
 
 function nome_funcao(parametro1, parametro2, ... parametroN) {
@@ -36,7 +37,8 @@ function nome_funcao(parametro1, parametro2, ... parametroN) {
 
 }
 
-As funções são chamadas por seus nome e quando necessário passando seus parametros, por exemplo:
+As funções são chamadas por seus nome e quando necessário passando seus parametros, 
+por exemplo:
 
 */
 
@@ -84,7 +86,8 @@ function mostrarMensagemVarOutside(){
 mostrarMensagemVarOutside();
 
 
-//Porém o que acontece se existir uma variável com o mesmo nome declarada dentro do escopo da função?
+//Porém o que acontece se existir uma variável com o mesmo nome declarada dentro do
+// escopo da função?
 
 function mostrarMensagemVar_InOut(){
 
@@ -124,7 +127,8 @@ imprimirCredenciais(nome, idade, endereco);
 passado nenhum valor ao se chamar a função.
 */
 
-function imprimirCredenciais_1(nome = "Nenhum nome Informado", idade = 0, endereco = "0.0.0.0"){
+function imprimirCredenciais_1(nome = "Nenhum nome Informado", idade = 0, 
+                                endereco = "0.0.0.0"){
 
     alert( "Nome: " + nome);
     alert( "Idade: " + idade);
