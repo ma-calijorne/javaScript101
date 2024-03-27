@@ -42,7 +42,8 @@ while (i2) {
 }
 
 /*
-Do-While: A verificação de condição pode ser movida abaixo do corpo do loop usando a sintaxe do..while:
+Do-While: A verificação de condição pode ser movida abaixo do corpo do loop usando a 
+sintaxe do..while:
 
 do {
   // loop body

@@ -18,8 +18,10 @@ switch(x) {
 }
 
 
-* O valor de x é verificado quanto a uma igualdade estrita com o valor do primeiro caso (isto é, valor1), depois para o segundo (valor2) e assim por diante.
-* Se a igualdade for encontrada, o switch começa a executar o código a partir do caso correspondente, até a quebra mais próxima (ou até o final do switch).
+* O valor de x é verificado quanto a uma igualdade estrita com o valor do primeiro 
+caso (isto é, valor1), depois para o segundo (valor2) e assim por diante.
+* Se a igualdade for encontrada, o switch começa a executar o código a partir do 
+caso correspondente, até a quebra mais próxima (ou até o final do switch).
 * Se nenhum caso for encontrado, o código padrão será executado (se existir).
 */
 

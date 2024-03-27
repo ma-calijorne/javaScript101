@@ -78,7 +78,6 @@ if (anoNascimento == 1980){
 
 
 /*
-
 Operador Condicional ?
 
 Às vezes, precisamos atribuir uma variável dependendo 

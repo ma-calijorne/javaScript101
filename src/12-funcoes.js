@@ -141,8 +141,8 @@ let endereco1 = "localhost";
 imprimirCredenciais_1(undefined, idade1, endereco1);
 
 
-//Podemos passar por parametro outra função que vá executar alguma tarefa e/ou retornar um valor para 
-//a função chamadora.
+//Podemos passar por parametro outra função que vá executar alguma tarefa e/ou 
+//retornar um valor para a função chamadora.
 
 function anoAtual(){
 
@@ -169,12 +169,13 @@ IMPORTANTE:
 
 Dando nome às funções
 
-Funções são ações. Portanto, seu nome geralmente é um verbo. Deve ser breve, o mais preciso possível 
-e descrever o que a função faz, para que alguém que leia o código tenha uma indicação do que a função 
+Funções são ações. Portanto, seu nome geralmente é um verbo. Deve ser breve, o mais 
+preciso possível e descrever o que a função faz, para que alguém que leia o código 
+tenha uma indicação do que a função 
 faz.
 
-É uma prática comum iniciar uma função com um prefixo verbal que descreva vagamente a ação. Deve haver 
-um acordo dentro da equipe sobre o significado dos prefixos.
+É uma prática comum iniciar uma função com um prefixo verbal que descreva vagamente 
+a ação. Deve haver um acordo dentro da equipe sobre o significado dos prefixos.
 
 Por exemplo, as funções que começam com "show" geralmente mostram algo.
 
