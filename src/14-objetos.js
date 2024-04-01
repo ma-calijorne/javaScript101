@@ -11,7 +11,7 @@ da linguagem.
 
 Portanto, devemos entendê-los primeiro.
 
-Um objeto pode ser criado com colchetes {…} com uma lista opcional de propriedades. 
+Um objeto pode ser criado com chaves {…} com uma lista opcional de propriedades. 
 Uma propriedade é um par "chave: valor", onde a chave é uma string (também chamada de 
     "nome da propriedade") e o valor pode ser qualquer coisa.
 
@@ -139,10 +139,12 @@ function verificarLogIn(nome){
     if (nome == "Marco"){
         
         alert( "Usuário está on-line" );
+        return true;
 
     }else{
 
         alert( "Usuário está off-line" );
+        return false;
 
     }
 }
@@ -192,3 +194,28 @@ sum() retorna a soma dos valores salvos.
 mul() multiplica os valores salvos e retorna o resultado.
 
 */
+
+let calculadora = {
+
+    a : 0,
+    b : 0,
+
+    readValues(a,b){
+        this.a = a;
+        this.b = b;
+    },
+
+    sumValues(){
+
+        return this.a + this.b;
+    },
+
+    multiValues(){
+
+        return this.a * this.b;
+    }
+}
+
+calculadora.readValues(1,2);
+alert(calculadora.sumValues())
+alert(calculadora.multiValues())
